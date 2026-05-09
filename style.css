@@ -1,0 +1,49 @@
+/*
+Theme Name:		 WordPress.TV v3
+Theme URI:		 https://wordpress.tv/
+Author: 
+Author URI: 
+Description: 
+Requires at least: 6.9
+Tested up to: 6.9
+Requires PHP: 7.4
+Version: 1.1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: wordpresstv3
+*/
+
+/*** Video Single Page ***/
+
+.wptv-video-single-details ul {
+	display: flex;
+	flex-direction: column;
+	padding: 0;
+	margin: 0;
+}
+.wptv-video-single-details ul li {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	gap: 1rem;
+	padding: 0;
+	margin: 0;
+	padding-bottom: 0.5rem;
+	margin-bottom: 0;
+}
+
+.wptv-video-single-details ul li a {
+	color: var(--wp--preset--color--custom-wp-blue);
+}
+
+.tag-count {
+	display: inline-block;
+	background-color: #ddd;
+	border-radius: 9px;
+	padding: 2px 4px;
+	font-size: 80%;
+	line-height: 14px;
+	font-size: 12px;
+	text-align: center;
+	min-width: 10px;
+}
+

@@ -1,0 +1,159 @@
+/**
+ * Styles for WPTV3 Anonymous Video Upload Form
+ * 
+ * @package WPTV3
+ * @since 1.0.0
+ */
+
+.wptv-anon-upload-container {
+	width: 100%;
+}
+
+.wptv-anon-upload-container .video-upload {
+	width: 100%;
+}
+
+.wptv-anon-upload-container .noscript-show p {
+	margin: 0 !important;
+}
+
+.wptv-anon-upload-container .container {
+	overflow: hidden;
+}
+
+.wptv-anon-upload-container .video-upload-left {
+	max-width: 550px;
+	margin: 15px;
+}
+
+.wptv-anon-upload-container .video-upload p {
+	margin: 16px 0;
+	overflow: hidden;
+}
+
+.wptv-anon-upload-container .video-upload h3 {
+	font-size: 22px;
+}
+
+.wptv-anon-upload-container .video-upload-left p > label,
+.wptv-anon-upload-container .video-upload-left div > label {
+	padding: 4px 0 0;
+	display: block;
+	width: 130px;
+	float: left;
+	font-weight: bold;
+}
+
+@media screen and ( max-width: 500px ) {
+	.wptv-anon-upload-container .video-upload-left p > label,
+	.wptv-anon-upload-container .video-upload-left div > label {
+		width: 100%;
+	}
+}
+
+.wptv-anon-upload-container .video-upload-left p > label.wptv-video-wordcamp-cb {
+	display: inline;
+	float: none;
+}
+
+.wptv-anon-upload-container .video-upload-left p label .required {
+	line-height: 15px;
+	vertical-align: bottom;
+	margin: 0 3px;
+}
+
+.wptv-anon-upload-container .video-upload-left input[type="text"],
+.wptv-anon-upload-container .video-upload-left textarea,
+.wptv-anon-upload-container .video-upload-left ul.cats-checkboxes {
+	border-radius: 3px;
+	border: 1px solid #dfdfdf;
+	color: #333;
+	background-color: #fff;
+	padding: 4px;
+	width: 96%;
+	max-width: 329px;
+}
+
+.wptv-anon-upload-container .video-upload-left ul.cats-checkboxes {
+	height: 150px;
+	overflow: auto;
+	margin-top: 4px;
+}
+
+.wptv-anon-upload-container .video-upload-left ul.cats-checkboxes ul.children {
+	margin-left: 15px;
+}
+
+.wptv-anon-upload-container .video-upload-left input[type="text"]:focus,
+.wptv-anon-upload-container .video-upload-left textarea:focus {
+	border-color: #bbb;
+}
+
+.wptv-anon-upload-container .video-upload-left #wptv_honey_container {
+	display: none;
+}
+
+.wptv-anon-upload-container #video-upload-form p.last {
+	margin: 5px 80px 25px;
+	text-align: right;
+}
+
+.wptv-anon-upload-container #video-upload-form p .invalid {
+	border: 1px solid red;
+}
+
+.wptv-anon-upload-container #video-upload-form input[type="submit"] {
+	font-size: 15px;
+	padding: 4px 12px;
+}
+
+.wptv-anon-upload-container .video-upload .pass-form label {
+	float: none;
+	display: inline;
+	width: auto;
+}
+
+.wptv-anon-upload-container #upload-progress .status,
+.wptv-anon-upload-container #upload-progress .percent {
+	font-family: monospace;
+}
+
+.wptv-anon-upload-container #upload-progress a.abort:hover {
+	color: red;
+}
+
+/* Error and success messages */
+.wptv-anon-upload-container .wptv-upload-error {
+	background-color: #f8d7da;
+	border: 1px solid #f5c6cb;
+	color: #721c24;
+	padding: 12px;
+	margin: 16px 0;
+	border-radius: 4px;
+}
+
+.wptv-anon-upload-container .wptv-upload-error p {
+	margin: 0;
+}
+
+.wptv-anon-upload-container .wptv-upload-success {
+	background-color: #d4edda;
+	border: 1px solid #c3e6cb;
+	color: #155724;
+	padding: 12px;
+	margin: 16px 0;
+	border-radius: 4px;
+}
+
+.wptv-anon-upload-container .wptv-upload-success p {
+	margin: 8px 0;
+}
+
+.wptv-anon-upload-container .wptv-upload-success p:first-child {
+	margin-top: 0;
+}
+
+.wptv-anon-upload-container .wptv-upload-success p:last-child {
+	margin-bottom: 0;
+}
+

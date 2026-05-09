@@ -1,0 +1,87 @@
+.video-upload h3 {
+	font-size: 22px;
+}
+
+.video-upload table tr th,
+.video-upload table tr td {
+	padding: 7px 0;
+	line-height: 1.4em;
+}
+
+.video-upload table tr th {
+	width: 180px;
+	font-weight: bold;
+}
+
+.video-upload table tr th label .required {
+	line-height: 15px;
+	vertical-align: bottom;
+	margin: 0 3px;
+}
+
+.video-upload input[type="text"],
+.video-upload textarea,
+.video-upload ul.cats-checkboxes,
+.video-upload select {
+	border-radius: 3px;
+	border: 1px solid #dfdfdf;
+	color: #333;
+	background-color: #fff;
+	padding: 4px;
+	width: 329px;
+	max-width: 329px;
+}
+
+.video-upload input[type="text"]:focus,
+.video-upload textarea:focus,
+.video-upload select:focus {
+	border-color: #bbb;
+}
+
+#subtitle-instructions {
+	overflow: auto;
+}
+
+#subtitle-instructions img {
+	border: 1px solid #808080;
+	max-width: 938px;
+}
+
+#video-upload-form p.last,
+#video-upload-form table tr td.last {
+	padding: 15px 0;
+	text-align: left;
+}
+
+#video-upload-form p .invalid,
+#video-upload-form select.invalid {
+	border: 1px solid #d63638;
+}
+
+#video-upload-form input[type="submit"] {
+	font-size: 15px;
+	padding: 4px 12px;
+}
+
+.video-upload .pass-form label {
+	float: none;
+	display: inline;
+	width: auto;
+}
+
+.wptv-upload-error,
+.wptv-upload-success {
+	padding: 10px 12px;
+	border-radius: 4px;
+	margin: 0 0 16px;
+}
+
+.wptv-upload-error {
+	background: #fcf0f1;
+	border: 1px solid #d63638;
+}
+
+.wptv-upload-success {
+	background: #edfaef;
+	border: 1px solid #00a32a;
+}
