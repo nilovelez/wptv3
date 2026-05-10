@@ -382,6 +382,10 @@ class WordPressTV_Theme {
 			'helps'    => __( 'Separate languages with commas.', 'wptv' ),
 			'sort'     => true,
 			'args'     => array( 'orderby' => 'term_order' ),
+			'public'   => true,
+			'publicly_queryable' => true,
+			'show_ui'  => true,
+			'show_in_rest' => true,
 			'rewrite'  => array( 'slug' => 'language' ),
 		) );
 
@@ -391,6 +395,11 @@ class WordPressTV_Theme {
 			'helps'    => __( 'Enter event', 'wptv' ),
 			'sort'     => true,
 			'args'     => array( 'orderby' => 'term_order' ),
+			'public'   => true,
+			'publicly_queryable' => true,
+			'show_ui'  => true,
+			'show_in_rest' => true,
+			'query_var' => 'events',
 			'rewrite'  => array( 'slug' => 'event' ),
 		) );
 	}
