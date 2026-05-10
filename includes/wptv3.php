@@ -548,11 +548,32 @@ class WordPressTV_Theme {
 
 		$guid = $this->get_the_video_guid( $post );
 
-		if ( $guid && function_exists( 'video_get_highest_resolution_image_url' ) ) {
-			$ret = video_get_highest_resolution_image_url( $guid );
+		if ( ! $guid ) {
+			return false;
 		}
 
-		return $ret;
+		// First try, VideoPress native functions
+
+		if ( function_exists( 'video_get_highest_resolution_image_url' ) ) {
+			if ( $poster_img_url = video_get_highest_resolution_image_url( $guid ) ) {
+				return $poster_img_url;
+			}
+		}
+
+		// Second try, VideoPress API
+		$api_url = 'https://public-api.wordpress.com/rest/v1.1/videos/' . $guid . '/poster';
+	
+		$request  = wp_remote_get( $api_url );
+		if ( is_wp_error( $request ) ) {
+			return false;
+		}
+		$data   = json_decode( wp_remote_retrieve_body( $request ) , true );
+		if (isset( $data['poster'] ) ) {
+			return esc_url( $data['poster'] );
+		}
+
+		// Something funky happened
+		return false;
 	}
 
 	/**
