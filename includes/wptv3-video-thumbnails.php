@@ -38,6 +38,12 @@ function wptv_get_videopress_poster_url( $guid ) {
 	// Can't be too careful
 	$guid = sanitize_text_field( $guid );
 
+
+	// only works in dotcom
+	if ( $guid && function_exists( 'video_get_highest_resolution_image_url' ) ) {
+		return video_get_highest_resolution_image_url( $guid );
+	}
+
 	// Include VideoPress_Video class if not loaded
 	if ( ! class_exists( 'VideoPress_Video' ) ) {
 		$file_path = ABSPATH . 'wp-content/plugins/jetpack/modules/videopress/class.videopress-video.php';
